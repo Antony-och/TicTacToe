@@ -275,3 +275,22 @@ h1::before {
     width: 10rem;
   }
 }
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;   /* center the logo */
+  max-width: 100%;       /* responsive */
+  height: auto;          /* keeps aspect ratio */
+  width: 150px;          /* base size */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* smooth effect */
+}
+
+.logo:hover {
+  transform: scale(1.1);  /* slightly enlarge */
+  opacity: 0.85;          /* subtle fade */
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 100px;  /* smaller logo on small screens */
+  }
+}
